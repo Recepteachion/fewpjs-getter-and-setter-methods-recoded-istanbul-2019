@@ -19,10 +19,15 @@ class Circle{
   
   set circumference(value){
     this.radius=value
-    return `${Math.PI*this.diameter}`
+    return `${Math.PI*this.radius*2}`
   }
   
   get area(){
+    return `${Math.PI*this.radius*this.radius}`
+  }
+  
+  set area(value){
+    this.radius=value
     return `${Math.PI*this.radius*this.radius}`
   }
 }
