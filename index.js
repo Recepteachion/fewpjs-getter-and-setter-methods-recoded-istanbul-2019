@@ -12,6 +12,6 @@ class Circle{
     return `${Math.PI*this.diameter}`
   }
   get area(){
-    return `${Math.PI*this.diameter*this.diameter}`
+    return `${Math.PI*this.radius*this.radius}`
   }
 }
