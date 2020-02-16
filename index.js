@@ -8,9 +8,20 @@ class Circle{
   get diameter(){
     return this.radius*2
   }
+  set diameter(value){
+    this.radius=value;
+    return this.radius*2
+  }
+  
   get circumference(){
     return `${Math.PI*this.diameter}`
   }
+  
+  set circumference(value){
+    this.radius=value
+    return `${Math.PI*this.diameter}`
+  }
+  
   get area(){
     return `${Math.PI*this.radius*this.radius}`
   }
